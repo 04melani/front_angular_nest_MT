@@ -1,16 +1,16 @@
-import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
+import { NgModule } from '@angular/core';
 
 const routes: Routes = [
   {
-    path: "",
+    path:"",
     redirectTo: 'login',
-    pathMatch: 'full'
+    pathMatch:'full'
   },
   {
-    path: "login",
+    path: 'login',
     component: LoginComponent
   },
   {
@@ -18,8 +18,8 @@ const routes: Routes = [
     component: RegisterComponent
   },
   {
-    path: '***',
-    redirectTo: 'login'
+    path:'**',
+    redirectTo:'login'
   }
 ];
 
