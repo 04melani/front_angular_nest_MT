@@ -1,13 +1,13 @@
 import { HttpClient } from '@angular/common/http';
-import { Injectable, inject } from '@angular/core';
+import { inject, Injectable } from '@angular/core';
+import { environment } from '../../../environments/environment.development';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
-
-  private baseUrl="http://127.0.0.1:3000" //solo para pruebas deberia ir "http://127.0.0.1:3000"
-
+  
+  private baseUrl=environment.urlServidor
   private http=inject(HttpClient)
 
   constructor() { }
